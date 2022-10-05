@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Form</title>
-    <link rel="stylesheet" href="/Css/style.css">
+    <link rel="stylesheet" href="Css/style.css">
 </head>
 <body>
     
     <div class="container">
-        <form id="contact-form" method="post" action="/Backend/formhandler.php">
+        <form name="myForm" onsubmit="sendEmail(); reset(); return false;" method="post">
             <h3>GET IN TOUCH</h3>
 
             <input type="text" id="name" placeholder="Your Name">
@@ -22,7 +22,7 @@
         </form>
     </div>
 
-    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="/JavaScript/script.js"></script> -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="/JavaScript/script.js"></script>
 </body>
 </html>
